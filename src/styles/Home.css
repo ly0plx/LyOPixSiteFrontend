@@ -1,0 +1,8 @@
+.home-container {
+  padding: 20px;
+  background: #eef2ff;
+  border-radius: 10px;
+}
+.home-container h2 {
+  color: #1e40af;
+}
