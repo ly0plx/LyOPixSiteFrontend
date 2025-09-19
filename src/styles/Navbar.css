@@ -1,12 +1,32 @@
 .navbar {
-  padding: 10px;
-  background: #111827;
+  display: flex;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Sensation', sans-serif;
+  font-weight: 700;
+  color: #B71C1C;
+  border-bottom: 3px solid #B71C1C;
 }
-.navbar a {
-  margin-right: 1rem;
-  color: white;
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  padding: 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Style normal links */
+.navbar ul li a {
+  color: #B71C1C;
   text-decoration: none;
 }
-.navbar a:hover {
-  text-decoration: underline;
+
+/* Style active links */
+.navbar ul li a.active {
+  color: #EF5350;
 }
