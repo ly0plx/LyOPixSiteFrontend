@@ -1,0 +1,33 @@
+.links {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.links ul li a {
+    color: #B71C1C;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.2s ease;
+    border: 1px solid #B71C1C;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.links ul li a:hover {
+    color: #8B0000; /* darker red on hover */
+    border-color: #8B0000;
+}

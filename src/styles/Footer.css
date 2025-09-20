@@ -1,0 +1,42 @@
+footer {
+  width: 100%;
+  height: auto;
+  color: #B71C1C;
+  text-align: center;
+  position: relative;
+  padding: 1rem 0;
+  border-top: 3px solid #B71C1C;
+}
+
+.footer-inner {
+  display: inline-block; /* shrink to content width */
+  margin: 0 auto;       /* center in footer */
+}
+
+.left {
+  float: left;
+  margin: 0 2rem;
+}
+
+.right {
+  float: right;
+  margin: 2rem 2rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.footer h3 {
+  font-size: 22.5px;
+  margin: 0 ;
+  font-weight: 700;
+}
+
+.footer li {
+  color: #EF5350;
+  margin: 0.5rem 0;
+  font-weight: 700;
+}
