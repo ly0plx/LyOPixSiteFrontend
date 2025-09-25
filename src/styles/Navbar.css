@@ -1,18 +1,25 @@
 .navbar {
   display: flex;
   padding: 0.5rem 1rem;
-  background-color: white;
+  background-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.3), rgba(183, 28, 28, 0.698));
+  backdrop-filter: blur(10px);
   justify-content: center;
   align-items: center;
   font-family: 'Sensation', sans-serif;
   font-weight: 700;
-  color: #B71C1C;
-  border-bottom: 3px solid #B71C1C;
+  color: white;
+  border-bottom: 5px solid #B71C1C;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .navbar ul {
   display: flex;
   list-style: none;
+  font-family: "sansation";
 }
 
 .navbar ul li {
@@ -22,13 +29,13 @@
 
 /* Style normal links */
 .navbar ul li a {
-  color: #B71C1C;
+  color: white;
   text-decoration: none;
 }
 
 /* Style active links */
 .navbar ul li a.active {
-  color: #EF5350;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .navbar h1 {

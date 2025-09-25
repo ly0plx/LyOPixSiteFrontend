@@ -3,6 +3,7 @@ import SingleInput from "../components/SingleInput";
 import SocialLinks from "../components/SocialLinks";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -31,15 +32,16 @@ export default function Footer() {
           </div>
           <div className="right">
             <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Contact</li>
-              <li>Blog</li>
-              <li>Portfolio</li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
+              <li><Link to="/blog">Blog</Link></li>
+              <li><Link to="/portfolio">Portfolio</Link></li>
             </ul>
           </div>
         </div>
       </div>
     </footer>
+
   );
 }

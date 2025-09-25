@@ -7,5 +7,69 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: radial-gradient(circle at center, black, #b71c1c);
+  background-attachment: fixed;
+  background-position: center;
+}
 
+/* Change text selection highlight */
+::selection {
+  background: rgb(150, 0, 0);   /* background highlight */
+  color: #fff;           /* text color */
+}
+
+/* For Firefox, you also want this (not always required but safer) */
+::-moz-selection {
+  background: rgb(150, 0, 0);   /* background highlight */
+  color: #fff;           /* text color */
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #940000 #000000;
+  }
+
+  .btn {
+    margin: 0.5rem;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    /* max-width: 100%; */
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Sensation', sans-serif;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .btn:hover {
+    background-color: transparent;
+  }
+
+  hr {
+    margin: 0;
+    background-color: red;
+    border: 0;
+    height: 2px;
+  }
+
+  /* Prevent text selection globally */
+* {
+  user-select: none;
+  -webkit-user-select: none; /* for Safari */
+  -ms-user-select: none;     /* for old IE/Edge */
 }

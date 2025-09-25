@@ -1,8 +1,91 @@
 .home-container {
-  padding: 20px;
+  margin: 0;
   background: #eef2ff;
   border-radius: 10px;
+  padding: 0;
 }
-.home-container h2 {
-  color: #1e40af;
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding: 0; */
+  /* margin: 0; */
+  background-image: radial-gradient(circle at center, #B71C1C, black);
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  color: white;
+}
+
+.main {
+  text-align: center;
+}
+
+.main p {
+  color: rgba(255, 255, 255, 0.7)
+}
+
+.bottom {
+  position: absolute;
+  bottom: 20px; /* adjust spacing from bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.hero h1 {
+  text-align: center;
+  padding: 50px 20px;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.mee {
+  padding: 1rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  background-image: radial-gradient(circle at center, #F44336, black);
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* Projects Section */
+.projects {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  background-image: radial-gradient(circle at center, #B71C1C, black);
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.project-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(170, 133, 133, 0.2);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 20px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }

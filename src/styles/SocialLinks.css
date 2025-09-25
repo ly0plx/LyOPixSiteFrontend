@@ -18,7 +18,7 @@
 }
 
 .links ul li a {
-    color: #B71C1C;
+    color: white;
     text-decoration: none;
     font-size: 1.5rem;
     transition: color 0.2s ease;
@@ -28,6 +28,6 @@
 }
 
 .links ul li a:hover {
-    color: #8B0000; /* darker red on hover */
+    color: rgba(255, 255, 255, 0.6); /* darker red on hover */
     border-color: #8B0000;
 }
