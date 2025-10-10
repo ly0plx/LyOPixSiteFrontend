@@ -5,7 +5,7 @@
 .contact-container {
   max-width: 500px;
   margin: 0 auto;
-  padding: 60px 20px;
+  padding: 80px 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -42,33 +42,6 @@
 /* Make textarea taller and clean */
 .contact-container .input-group textarea {
   min-height: 120px;
-}
-
-/* SUBMIT BUTTON */
-.contact-container button {
-  padding: 14px 20px;
-  font-size: 16px;
-  font-weight: 500;
-  border: none;
-  border-radius: 8px;
-  background: var(--border-focus);
-  color: #fff;
-  cursor: pointer;
-  transition:
-    background 0.25s ease,
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
-}
-
-.contact-container button:hover {
-  background: #a0a0a0;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
-}
-
-.contact-container button:active {
-  transform: scale(0.97);
-  box-shadow: none;
 }
 
 /* Responsive tweaks */

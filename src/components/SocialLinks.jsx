@@ -11,7 +11,7 @@ export default function SingleInput() {
           <a href="https://discord.gg/EK89tgrmm2"><FontAwesomeIcon icon={faDiscord} /></a>
         </li>
         <li>
-          <a href="mailto:tanner.ordonez@gmail.com"><FontAwesomeIcon icon={faEnvelope} /></a>
+          <a href="mailto:me@lyopix.com"><FontAwesomeIcon icon={faEnvelope} /></a>
         </li>
         <li>
           <a href="https://github.com/ly0plx"><FontAwesomeIcon icon={faGithub} /></a>

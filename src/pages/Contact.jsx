@@ -1,7 +1,24 @@
 import { Helmet } from "react-helmet-async";
+import { useState } from "react";
+import Textbox from "../components/Textbox";
+import Button from "../components/Button";
 import "../styles/Contact.css";
 
 export default function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    // Replace with real submit logic
+    console.log({ name, email, message });
+    // Clear the form
+    setName("");
+    setEmail("");
+    setMessage("");
+  }
+
   return (
     <div className="contact-container">
       <Helmet>
@@ -9,20 +26,11 @@ export default function Contact() {
       </Helmet>
       <h1>Contact Us</h1>
       <p>If you have any questions, feel free to reach out!</p>
-      <form action="">
-        <div className="input-group">
-          <input type="text" id="name" placeholder=" " />
-          <label htmlFor="name">Name:</label>
-        </div>
-        <div className="input-group">
-          <input type="email" id="email" placeholder=" " />
-          <label htmlFor="email">Email:</label>
-        </div>
-        <div className="input-group">
-          <textarea name="" id="message" placeholder=" "></textarea>
-          <label htmlFor="message">Message:</label>
-        </div>
-        <button type="submit">Submit</button>
+      <form onSubmit={handleSubmit}>
+        <Textbox id="name" placeholder="Name:" value={name} onChange={(e) => setName(e.target.value)} />
+        <Textbox id="email" type="email" placeholder="Email:" value={email} onChange={(e) => setEmail(e.target.value)} />
+        <Textbox id="message" as="textarea" placeholder="Message:" rows={6} value={message} onChange={(e) => setMessage(e.target.value)} />
+        <Button type="submit">Submit</Button>
       </form>
     </div>
   );
