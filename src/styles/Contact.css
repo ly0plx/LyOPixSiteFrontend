@@ -1,0 +1,83 @@
+/* ==============================
+   CONTACT PAGE STYLES
+   ============================== */
+
+.contact-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--text);
+}
+
+.contact-container h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.contact-container p {
+  text-align: center;
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 24px;
+}
+
+/* FORM LAYOUT */
+.contact-container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Inputs & Textarea inherit global effects */
+.contact-container .input-group input,
+.contact-container .input-group textarea {
+  font-size: 16px;
+}
+
+/* Make textarea taller and clean */
+.contact-container .input-group textarea {
+  min-height: 120px;
+}
+
+/* SUBMIT BUTTON */
+.contact-container button {
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  background: var(--border-focus);
+  color: #fff;
+  cursor: pointer;
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.contact-container button:hover {
+  background: #a0a0a0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
+
+.contact-container button:active {
+  transform: scale(0.97);
+  box-shadow: none;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .contact-container {
+    padding: 40px 16px;
+  }
+
+  .contact-container h1 {
+    font-size: 1.8rem;
+  }
+}

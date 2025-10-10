@@ -1,10 +1,9 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap'); /* Sensation Font */
+@import url("https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"); /* Sensation Font */
 
 body {
-
-  font-family: "Sansation", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Sansation", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: radial-gradient(circle at center, black, #b71c1c);
@@ -14,62 +13,164 @@ body {
 
 /* Change text selection highlight */
 ::selection {
-  background: rgb(150, 0, 0);   /* background highlight */
-  color: #fff;           /* text color */
+  background: rgb(150, 0, 0); /* background highlight */
+  color: #fff; /* text color */
 }
 
 /* For Firefox, you also want this (not always required but safer) */
 ::-moz-selection {
-  background: rgb(150, 0, 0);   /* background highlight */
-  color: #fff;           /* text color */
+  background: rgb(150, 0, 0); /* background highlight */
+  color: #fff; /* text color */
 }
 
 /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: #940000 #000000;
-  }
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #940000 #000000;
+}
 
-  .btn {
-    margin: 0.5rem;
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.15);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    /* max-width: 100%; */
-    border-radius: 5px;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-    display: inline-block;
-    font-family: 'Sensation', sans-serif;
-    text-align: center;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    line-height: 1.5;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    border: 2px solid rgba(255, 255, 255, 0.15);
-  }
+.btn {
+  margin: 0.5rem;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  /* max-width: 100%; */
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Sensation", sans-serif;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+}
 
-  .btn:hover {
-    background-color: transparent;
-  }
+.btn:hover {
+  background-color: transparent;
+}
 
-  hr {
-    margin: 0;
-    background-color: red;
-    border: 0;
-    height: 2px;
-  }
+hr {
+  margin: 0;
+  background-color: red;
+  border: 0;
+  height: 2px;
+}
 
-  /* Prevent text selection globally */
+/* Prevent text selection globally */
 * {
   user-select: none;
   -webkit-user-select: none; /* for Safari */
-  -ms-user-select: none;     /* for old IE/Edge */
+  -ms-user-select: none; /* for old IE/Edge */
+}
+
+:root {
+  --bg: linear-gradient(to right, #8f8f8f, rgba(0, 0, 0, 1), #8f8f8f);
+  --input-bg: rgba(255, 255, 255, 0.05);
+  --border: rgba(255, 255, 255, 0.15);
+  --border-focus: #8f8f8f;
+  --text: #f0f0f0;
+  --label: #888;
+}
+
+.input-group {
+  position: relative;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* Shared styling for input + textarea */
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 16px 14px;
+  font-size: 16px;
+  color: var(--text);
+  background: var(--input-bg);
+  backdrop-filter: blur(6px);
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  outline: none;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.input-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: var(--border-focus);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.input-group label {
+  position: absolute;
+  left: 14px;
+  color: var(--label);
+  padding: 0 6px;
+  pointer-events: none;
+  font-size: 16px;
+  transition:
+    top 0.3s ease,
+    font-size 0.3s ease,
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+/* INPUT: centered label by default */
+.input-group input + label {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* TEXTAREA: label at the top */
+.input-group textarea + label {
+  top: 16px;
+  transform: none;
+}
+
+/* Floating label — shared for input & textarea */
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group textarea:focus + label,
+.input-group textarea:not(:placeholder-shown) + label {
+  top: 0;
+  transform: translateY(-50%) scale(0.85);
+  font-size: 13px;
+  color: var(--border-focus);
+}
+
+/* Cutout effect */
+.input-group label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -6px;
+  right: -6px;
+  height: 1.5px;
+  background: var(--bg);
+  transform: translateY(-50%) scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+
+.input-group input:focus + label::before,
+.input-group input:not(:placeholder-shown) + label::before,
+.input-group textarea:focus + label::before,
+.input-group textarea:not(:placeholder-shown) + label::before {
+  transform: translateY(-50%) scaleX(1);
 }
