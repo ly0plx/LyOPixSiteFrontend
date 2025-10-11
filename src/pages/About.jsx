@@ -9,7 +9,7 @@ export default function About() {
         <title>About | LyOPix Coding</title>
       </Helmet>
       <div className="about">
-        <h1>About LyOPix</h1>
+        <h1><strong>About LyOPix</strong></h1>
         <p>[TODO: Replace this with dump from backend]Est quis commodo et qui cupidatat ea eu aliqua. Enim et sunt consequat Lorem amet tempor commodo ut nulla sit elit ullamco sunt. Officia esse fugiat proident occaecat. Sit adipisicing aliquip labore duis magna voluptate. Minim labore ipsum ad ipsum nostrud et labore ut non proident. Mollit ad occaecat velit ullamco aliqua culpa voluptate. Incididunt fugiat sint est reprehenderit irure id excepteur.
 
 Eiusmod adipisicing velit non sunt. Reprehenderit in deserunt nostrud consectetur consequat est aute dolore quis eiusmod sint. Est occaecat ea est pariatur commodo eiusmod nulla laborum occaecat ullamco aliqua cupidatat veniam aute. In do do ea do irure proident enim.

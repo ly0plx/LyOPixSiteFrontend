@@ -4,12 +4,15 @@
 
 .contact-container {
   max-width: 500px;
+  height: 100vh;
   margin: 0 auto;
-  padding: 80px 20px;
+  /* padding: 10px 20px; */
   display: flex;
   flex-direction: column;
   gap: 20px;
   color: var(--text);
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-container h1 {

@@ -1,8 +1,8 @@
 :root {
   --bg: linear-gradient(to right, #8f8f8f, black, black, black, #8f8f8f);
-  --input-bg: rgba(255, 255, 255, 0.05);
+  --input-bg: #ffa0000d;
   --border: rgba(255, 255, 255, 0.15);
-  --border-focus: #B71C1C;
+  --border-focus: #E4080A;
   --text: #f0f0f0;
   --label: #888;
 }
@@ -26,6 +26,15 @@
   outline: none;
   transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
+
+/* Prevent autofill from changing background */
+.input-group input:-webkit-autofill,
+.input-group textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px var(--input-bg) inset !important;
+  -webkit-text-fill-color: var(--text) !important;
+  transition: background-color 9999s ease-in-out 0s !important;
+}
+
 
 .input-group textarea {
   min-height: 100px;

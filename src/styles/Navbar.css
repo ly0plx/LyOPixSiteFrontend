@@ -1,14 +1,14 @@
 .navbar {
   display: flex;
   padding: 0.5rem 1rem;
-  background-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.3), rgba(183, 28, 28, 0.698));
+  background: linear-gradient(145deg, rgb(50, 0, 0), transparent);
   backdrop-filter: blur(10px);
   justify-content: center;
   align-items: center;
   font-family: 'Sensation', sans-serif;
   font-weight: 700;
   color: white;
-  border-bottom: 5px solid #B71C1C;
+  border-bottom: 3px solid #881a1a;
   position: fixed;
   width: 100%;
   z-index: 9999;
