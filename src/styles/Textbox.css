@@ -2,7 +2,7 @@
   --bg: linear-gradient(to right, #8f8f8f, black, black, black, #8f8f8f);
   --input-bg: rgba(255, 255, 255, 0.05);
   --border: rgba(255, 255, 255, 0.15);
-  --border-focus: #8f8f8f;
+  --border-focus: #B71C1C;
   --text: #f0f0f0;
   --label: #888;
 }
