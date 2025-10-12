@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet-async";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import avatar from "../assets/avatar.png";
 
 export default function Home() {
   return (
@@ -13,7 +12,6 @@ export default function Home() {
       </Helmet>
       <div className="hero">
         <div className="main">
-          <img src={avatar} alt="Avatar" />
           <h1>Hey! I'm LyOPix!</h1>
           <p>
             I'm a software developer that makes everything custom so that you
@@ -28,12 +26,12 @@ export default function Home() {
       <hr />
       <div className="mee">
         <h2>Check Me Out:</h2>
-        <Link to="/about" className="btn">
-          About
-        </Link>
-        <Link to="/portfolio" className="btn">
-          Portfolio
-        </Link>
+        <button>
+          <Link to="/about">About</Link>
+        </button>
+        <button>
+          <Link to="/portfolio">Portfolio</Link>
+        </button>
       </div>
       <hr />
       <div className="projects">
@@ -50,9 +48,9 @@ export default function Home() {
               Fugit nemo rerum molestias quidem quas, perspiciatis est eius
               culpa laborum saepe, deleniti alias?
             </p>
-            <a href="https://example.com/" className="btn">
-              Example Button Text
-            </a>
+            <button>
+              <a href="https://example.com/">Example Button Text</a>
+            </button>
           </div>
           <div className="project-card">
             <h3>Example Project Name</h3>
@@ -65,9 +63,9 @@ export default function Home() {
               Fugit nemo rerum molestias quidem quas, perspiciatis est eius
               culpa laborum saepe, deleniti alias?
             </p>
-            <a href="https://example.com/" className="btn">
-              Example Button Text
-            </a>
+            <button>
+              <a href="https://example.com/">Example Button Text</a>
+            </button>
           </div>
           <div className="project-card">
             <h3>Example Project Name</h3>
@@ -80,9 +78,9 @@ export default function Home() {
               Fugit nemo rerum molestias quidem quas, perspiciatis est eius
               culpa laborum saepe, deleniti alias?
             </p>
-            <a href="https://example.com/" className="btn">
-              Example Button Text
-            </a>
+            <button>
+              <a href="https://example.com/">Example Button Text</a>
+            </button>
           </div>
           <div className="project-card">
             <h3>Example Project Name</h3>
@@ -95,9 +93,9 @@ export default function Home() {
               Fugit nemo rerum molestias quidem quas, perspiciatis est eius
               culpa laborum saepe, deleniti alias?
             </p>
-            <a href="https://example.com/" className="btn">
-              Example Button Text
-            </a>
+            <button>
+              <a href="https://example.com/">Example Button Text</a>
+            </button>
           </div>
           <div className="project-card">
             <h3>Example Project Name</h3>
@@ -110,9 +108,39 @@ export default function Home() {
               Fugit nemo rerum molestias quidem quas, perspiciatis est eius
               culpa laborum saepe, deleniti alias?
             </p>
-            <a href="https://example.com/" className="btn">
-              Example Button Text
-            </a>
+            <button>
+              <a href="https://example.com/">Example Button Text</a>
+            </button>
+          </div>
+          <div className="project-card">
+            <h3>Example Project Name</h3>
+            <h5>
+              Status: <span>Finished</span>
+            </h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos animi, quidem aut est necessitatibus quasi sapiente?
+              Fugit nemo rerum molestias quidem quas, perspiciatis est eius
+              culpa laborum saepe, deleniti alias?
+            </p>
+            <button>
+              <a href="https://example.com/">Example Button Text</a>
+            </button>
+          </div>
+          <div className="project-card">
+            <h3>Example Project Name</h3>
+            <h5>
+              Status: <span>Finished</span>
+            </h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos animi, quidem aut est necessitatibus quasi sapiente?
+              Fugit nemo rerum molestias quidem quas, perspiciatis est eius
+              culpa laborum saepe, deleniti alias?
+            </p>
+            <button>
+              <a href="https://example.com/">Example Button Text</a>
+            </button>
           </div>
         </div>
       </div>

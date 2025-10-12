@@ -1,7 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { useState } from "react";
 import Textbox from "../components/Textbox";
-import Button from "../components/Button";
 import "../styles/Contact.css";
 
 export default function Contact() {
@@ -30,7 +29,7 @@ export default function Contact() {
         <Textbox id="name" placeholder="Name:" value={name} onChange={(e) => setName(e.target.value)} />
         <Textbox id="email" type="email" placeholder="Email:" value={email} onChange={(e) => setEmail(e.target.value)} />
         <Textbox id="message" as="textarea" placeholder="Message:" rows={6} value={message} onChange={(e) => setMessage(e.target.value)} />
-        <Button type="submit">Submit</Button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );

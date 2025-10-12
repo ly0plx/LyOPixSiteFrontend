@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import AppRoutes from "./routes/AppRoutes";
 import './styles/global.css'
+import './styles/colors.css'
 
 function App() {
   return (

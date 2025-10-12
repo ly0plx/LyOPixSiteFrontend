@@ -1,9 +1,7 @@
 :root {
-  --bg: linear-gradient(to right, #8f8f8f, black, black, black, #8f8f8f);
+  --bg: linear-gradient(to right, #E4080A, black, black, black, #E4080A);
   --input-bg: #ffa0000d;
-  --border: rgba(255, 255, 255, 0.15);
   --border-focus: #E4080A;
-  --text: #f0f0f0;
   --label: #888;
 }
 
@@ -19,7 +17,7 @@
   padding: 16px 14px;
   font-size: 16px;
   color: var(--text);
-  background: var(--input-bg);
+  background: var(--surface);
   backdrop-filter: blur(6px);
   border: 1.5px solid var(--border);
   border-radius: 10px;
@@ -30,7 +28,7 @@
 /* Prevent autofill from changing background */
 .input-group input:-webkit-autofill,
 .input-group textarea:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 1000px var(--input-bg) inset !important;
+  -webkit-box-shadow: 0 0 0 1000px var(--surface) inset !important;
   -webkit-text-fill-color: var(--text) !important;
   transition: background-color 9999s ease-in-out 0s !important;
 }
@@ -44,13 +42,13 @@
 .input-group input:focus,
 .input-group textarea:focus {
   border-color: var(--border-focus);
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--elevated);
 }
 
 .input-group label {
   position: absolute;
   left: 14px;
-  color: var(--label);
+  color: var(--text-secondary);
   padding: 0 6px;
   pointer-events: none;
   font-size: 16px;
@@ -78,7 +76,7 @@
   top: 0;
   transform: translateY(-50%) scale(0.85);
   font-size: 13px;
-  color: var(--border-focus);
+  color: var(--accent);
 }
 
 /* Cutout effect */
@@ -89,7 +87,7 @@
   left: -6px;
   right: -6px;
   height: 1.5px;
-  background: var(--bg);
+  background: linear-gradient(to right, var(--accent), var(--bg), var(--accent));
   transform: translateY(-50%) scaleX(0);
   transform-origin: center;
   transition: transform 0.3s ease;

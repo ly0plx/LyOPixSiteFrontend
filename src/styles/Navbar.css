@@ -1,14 +1,14 @@
 .navbar {
   display: flex;
   padding: 0.5rem 1rem;
-  background: linear-gradient(145deg, rgb(50, 0, 0), transparent);
+  background: var(--surface);
   backdrop-filter: blur(10px);
   justify-content: center;
   align-items: center;
   font-family: 'Sensation', sans-serif;
   font-weight: 700;
-  color: white;
-  border-bottom: 3px solid #881a1a;
+  color: var(--text);
+  border-bottom: 1.5px solid var(--accent);
   position: fixed;
   width: 100%;
   z-index: 9999;
@@ -19,7 +19,6 @@
 .navbar ul {
   display: flex;
   list-style: none;
-  font-family: "sansation";
 }
 
 .navbar ul li {
@@ -29,13 +28,13 @@
 
 /* Style normal links */
 .navbar ul li a {
-  color: white;
+  color: var(--text);
   text-decoration: none;
 }
 
 /* Style active links */
 .navbar ul li a.active {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--text-secondary);
 }
 
 .navbar h1 {

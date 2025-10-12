@@ -14,7 +14,6 @@
   padding-top: 9vh;
   display: flex;
   flex-direction: column;
-  color: white;
   max-width: 800px;
 }
 
@@ -26,4 +25,5 @@
 .about p {
   text-align: left;
   line-height: 1.5rem;
+  color: var(--text-secondary);
 }

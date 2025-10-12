@@ -1,0 +1,31 @@
+:root {
+  /* ===== Core Background ===== */
+  --bg: #0e0e0e;           /* Main background (pure dark) */
+  --surface: #1a1a1a;      /* Cards, inputs, navbars */
+  --elevated: #262626;     /* Popups, modals, elevated surfaces */
+
+  /* ===== Text ===== */
+  --text: #ffffff;         /* Main text */
+  --text-secondary: #b3b3b3; /* Subtle text, descriptions */
+  --text-muted: #7a7a7a;   /* Placeholder or inactive elements */
+
+  /* ===== Accent (Red Theme) ===== */
+  --accent: #E50914;       /* Primary accent (buttons, links, highlights) */
+  --accent-hover: #ff1f2a; /* Brighter red for hover/focus */
+  --accent-glow: rgba(229, 9, 20, 0.35); /* For soft shadows or glow effects */
+
+  /* ===== Borders & Lines ===== */
+  --border: #2a2a2a;       /* Subtle dividers */
+  --border-strong: #3a3a3a;
+
+  /* ===== Status Colors ===== */
+  --success: #00C853;      /* Bright green */
+  --warning: #FFAB00;      /* Amber */
+  --error: #FF5252;        /* Error red (distinct from accent) */
+  --info: #2979FF;         /* Blue info */
+
+  /* ===== UI Effects ===== */
+  --radius: 10px;          /* Border radius for components */
+  --transition: 0.25s ease; /* Smooth hover animations */
+  --shadow: 0 0 20px var(--accent-glow);
+}
