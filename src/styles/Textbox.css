@@ -1,9 +1,9 @@
-:root {
+/* :root {
   --bg: linear-gradient(to right, #E4080A, black, black, black, #E4080A);
   --input-bg: #ffa0000d;
   --border-focus: #E4080A;
   --label: #888;
-}
+} */
 
 .input-group {
   position: relative;
@@ -41,7 +41,7 @@
 
 .input-group input:focus,
 .input-group textarea:focus {
-  border-color: var(--border-focus);
+  border-color: var(--accent);
   background: var(--elevated);
 }
 
