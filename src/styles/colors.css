@@ -1,31 +1,37 @@
 :root {
   /* ===== Core Background ===== */
-  --bg: #0e0e0e;           /* Main background (pure dark) */
-  --surface: #1a1a1a;      /* Cards, inputs, navbars */
-  --elevated: #262626;     /* Popups, modals, elevated surfaces */
+  --bg: #121212;           /* Main background – deep dark but not black */
+  --surface: #1b1b1b;      /* Cards, inputs, navbars */
+  --elevated: #2c2c2c;     /* Modals, elevated surfaces */
 
   /* ===== Text ===== */
   --text: #ffffff;         /* Main text */
-  --text-secondary: #b3b3b3; /* Subtle text, descriptions */
-  --text-muted: #7a7a7a;   /* Placeholder or inactive elements */
+  --text-secondary: #c7c7c7; /* Subtle text, descriptions */
+  --text-muted: #8a8a8a;   /* Placeholder or inactive elements */
 
   /* ===== Accent (Red Theme) ===== */
-  --accent: #E50914;       /* Primary accent (buttons, links, highlights) */
+  --accent: #e50914;       /* Primary accent (buttons, links, highlights) */
   --accent-hover: #ff1f2a; /* Brighter red for hover/focus */
-  --accent-glow: rgba(229, 9, 20, 0.35); /* For soft shadows or glow effects */
+  --accent-active: #b0060f; /* Pressed state */
+  --accent-glow: rgba(229, 9, 20, 0.4); /* For soft shadows or glow effects */
 
   /* ===== Borders & Lines ===== */
-  --border: #2a2a2a;       /* Subtle dividers */
-  --border-strong: #3a3a3a;
+  --border: #2f2f2f;       /* Subtle dividers */
+  --border-strong: #3d3d3d;
 
   /* ===== Status Colors ===== */
-  --success: #00C853;      /* Bright green */
-  --warning: #FFAB00;      /* Amber */
-  --error: #FF5252;        /* Error red (distinct from accent) */
-  --info: #2979FF;         /* Blue info */
+  --success: #00c853;      /* Bright green for success */
+  --warning: #ffb300;      /* Warm amber for warnings */
+  --error: #ff4d4d;        /* Tuned red for errors */
+  --info: #3498ff;         /* Balanced blue for info states */
 
   /* ===== UI Effects ===== */
+  --overlay: rgba(255, 255, 255, 0.02);      /* Subtle glassy overlay */
+  --hover-overlay: rgba(255, 255, 255, 0.05);/* Hover feedback */
+  --focus-ring: 0 0 0 2px var(--accent);     /* Accessible focus outline */
+
+  /* ===== Component Defaults ===== */
   --radius: 10px;          /* Border radius for components */
-  --transition: 0.25s ease; /* Smooth hover animations */
-  --shadow: 0 0 20px var(--accent-glow);
+  --transition: 0.25s ease;/* Smooth hover animations */
+  --shadow: 0 0 20px var(--accent-glow); /* Accent glow shadow */
 }
