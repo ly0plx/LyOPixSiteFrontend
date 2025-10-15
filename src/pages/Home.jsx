@@ -1,4 +1,4 @@
-import "../styles/Home.css";
+import "../styles/page-css/Home.css";
 import { Helmet } from "react-helmet-async";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";

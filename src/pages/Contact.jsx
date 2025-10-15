@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { useState } from "react";
 import Textbox from "../components/Textbox";
-import "../styles/Contact.css";
+import "../styles/page-css/Contact.css";
 
 export default function Contact() {
   const [name, setName] = useState("");

@@ -1,0 +1,44 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  padding: 5vh 0 0 0;
+  background-color: var(--surface);
+}
+
+.content {
+  padding: 3rem 0;
+}
+
+.post-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.post {
+  display: flex;
+  width: min-content;
+  height: min-content;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: var(--surface);
+  color: var(--text);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.post img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: calc(var(--radius) - 5px);
+  margin-bottom: 1rem;
+}
