@@ -1,0 +1,16 @@
+.post h2 a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.post h2:hover {
+  text-decoration: dashed underline;
+  text-decoration-color: var(--text-muted);
+  text-underline-offset: 0.5rem;
+}
+
+.post h2 a svg {
+  margin-left: 0.3rem;
+  font-size: 0.8rem;
+  align-items: center;
+}

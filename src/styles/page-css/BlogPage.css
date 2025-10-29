@@ -1,0 +1,40 @@
+.post-page {
+  margin: 0;
+  border-radius: 10px;
+  min-height: 100vh;
+  padding: 0;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+
+.post-container {
+  max-width: 800px;
+  margin: 0 auto;
+  /* padding: 20px; */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* background-color: #ffffff; */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding-top: 9vh !important;
+}
+
+.post-container img {
+  width: 500px;
+  height: 300px;
+  border: 1.5px solid var(--accent);
+  border-radius: 10px;
+}
+
+.post-container h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.author {
+  font-weight:300;
+  color: var(--text-muted);
+}

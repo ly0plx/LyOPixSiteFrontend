@@ -4,7 +4,7 @@
 
 .contact-container {
   max-width: 500px;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
   /* padding: 10px 20px; */
   display: flex;

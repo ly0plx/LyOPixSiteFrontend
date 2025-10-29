@@ -1,43 +1,89 @@
-.input form {
-  display: flex;
+.input {
   width: 100%;
-  padding: 16px 14px;
-  font-size: 16px;
-  color: var(--text);
-  background: var(--input-bg);
-  backdrop-filter: blur(6px);
-  border: 1.5px solid var(--border);
-  border-radius: 20px;
-  outline: none;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  max-width: 500px;
 }
 
+.input form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
 
-.input input {
+.input input[type="text"] {
   flex: 1;
-  padding: 0.5rem 1rem;
-  border: none;
-  outline: none;
-  font-size: 1rem;
+  padding: 14px 60px 14px 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
   color: var(--text);
-  background-color: transparent;
+  font-size: 15px;
+  font-family: inherit;
+  outline: none;
+  transition: all var(--transition);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.input input[type="text"]::placeholder {
+  color: var(--text-muted);
+}
+
+.input input[type="text"]:hover {
+  border-color: var(--border-strong);
+  background: var(--elevated);
+}
+
+.input input[type="text"]:focus {
+  border-color: var(--accent);
+  background: var(--elevated);
+  box-shadow: var(--focus-ring), 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .input button {
-  background-color: var(--accent);
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 16px;
   color: var(--text);
   border: none;
-  padding: 1.25rem;
+  border-radius: calc(var(--radius) - 2px);
+  font-size: 16px;
   cursor: pointer;
+  transition: all var(--transition);
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.2s ease;
-  border-radius: 20px; /* rounded button */
-  height: 30px; /* match input height */
-  width: 30px;
+  box-shadow: 0 2px 8px var(--accent-glow);
 }
 
 .input button:hover {
-  background-color: var(--accent-hover); /* darker red on hover */
+  box-shadow: 0 4px 12px var(--accent-glow);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.input button:active {
+  transform: translateY(-50%) scale(0.98);
+}
+
+.input button:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* Disabled state */
+.input input[type="text"]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.input button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: translateY(-50%);
+}
+
+.input button:disabled:hover {
+  box-shadow: 0 2px 8px var(--accent-glow);
+  transform: translateY(-50%);
 }

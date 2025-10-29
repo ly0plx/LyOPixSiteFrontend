@@ -30,11 +30,16 @@
 .navbar ul li a {
   color: var(--text);
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: var(--text-secondary);
 }
 
 /* Style active links */
 .navbar ul li a.active {
-  color: var(--text-secondary);
+  color: var(--text-muted);
 }
 
 .navbar h1 {
