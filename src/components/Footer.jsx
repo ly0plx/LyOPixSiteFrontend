@@ -42,7 +42,7 @@ export default function Footer() {
             </div>
 
             <div className="footer-column">
-              <h3>Products</h3>
+              <h3>Projects</h3>
               <ul>
                 <li><a href="#product1">Product One</a></li>
                 <li><a href="#product2">Product Two</a></li>
@@ -80,11 +80,9 @@ export default function Footer() {
             © {new Date().getFullYear()} LyOPix Coding. All rights reserved.
           </p>
           <div className="footer-legal">
-            <a href="#privacy">Privacy Policy</a>
+            <a href="/legal/privacy">Privacy Policy</a>
             <span className="separator">•</span>
-            <a href="#terms">Terms of Service</a>
-            <span className="separator">•</span>
-            <a href="#cookies">Cookie Policy</a>
+            <a href="/legal/terms">Terms of Service</a>
           </div>
         </div>
         
