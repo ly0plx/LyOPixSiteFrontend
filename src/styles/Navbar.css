@@ -1,48 +1,217 @@
 .navbar {
   display: flex;
-  padding: 0.5rem 1rem;
-  background: var(--surface);
-  backdrop-filter: blur(10px);
-  justify-content: center;
+  height: 70px;
+  background-color: var(--bg);
   align-items: center;
-  font-family: 'Sensation', sans-serif;
-  font-weight: 700;
-  color: var(--text);
-  border-bottom: 1.5px solid var(--accent);
-  position: fixed;
-  width: 100%;
-  z-index: 9999;
-  background-attachment: fixed;
-  background-position: center;
+  justify-content: center;
+  padding-left: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  transition:
+    background-color 0.25s ease,
+    backdrop-filter 0.25s ease,
+    height 0.25s ease;
+}
+
+.navbar.nav-scrolled {
+  background-color: color-mix(in srgb, var(--bg) 85%, transparent);
+  backdrop-filter: blur(10px);
+  height: 60px;
+}
+
+.navbar img {
+  height: 46px;
+
+  transition:
+    height 0.25s ease,
+    transform 0.25s ease;
+}
+
+.navbar.nav-scrolled img {
+  height: 40px;
+  transform: translateY(0px);
 }
 
 .navbar ul {
   display: flex;
-  list-style: none;
+  gap: 1rem;
+  list-style-type: none;
+  align-items: center;
 }
 
-.navbar ul li {
-  padding: 0 0.5rem;
-  font-size: 1.2rem;
-}
-
-/* Style normal links */
 .navbar ul li a {
-  color: var(--text);
+  color: var(--text-muted);
   text-decoration: none;
-  transition: color 0.3s ease;
+  position: relative;
+  display: block;
+
+  transition: color 0.2s ease;
 }
 
 .navbar ul li a:hover {
-  color: var(--text-secondary);
+  color: var(--text);
 }
 
-/* Style active links */
 .navbar ul li a.active {
-  color: var(--text-muted);
+  color: var(--text);
 }
 
-.navbar h1 {
-  margin: 0;
-  padding: 0 3rem;
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: -7px;
+  background-color: var(--highlight);
+  transform: scaleX(0);
+  transform-origin: center;
+
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+
+.navbar ul li a.active::after {
+  transform: scaleX(1);
+}
+
+.cta {
+  box-sizing: border-box;
+  padding: 10px;
+  border: 2px solid var(--border-muted);
+  border-radius: 10px;
+  font-weight: 600;
+
+  transition:
+    padding 0.25s ease,
+    border-radius 0.25s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.cta.active::after {
+  content: none;
+}
+
+.cta:hover {
+  border-color: var(--border);
+  background-color: color-mix(in srgb, var(--highlight) 20%, transparent);
+}
+
+.cta.active {
+  border-color: var(--border);
+  background-color: var(--bg-light);
+}
+
+.menubutton {
+  display: none;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+
+  z-index: 1000;
+}
+
+.overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 60vw;
+
+  background-color: var(--bg);
+  transform: translateX(100%);
+  transition: transform 0.25s ease;
+
+  z-index: 1001;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 60px 24px;
+
+  box-sizing: border-box;
+}
+
+.panel.open {
+  transform: translateX(0);
+}
+
+.panel .close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--text-muted);
+
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.panel .close:hover {
+  color: var(--text);
+  transform: scale(1.1);
+}
+
+.panel a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+}
+
+.panel a.active {
+  color: var(--text)
+}
+
+.panel a::after {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 5px;
+  left: 0;
+  bottom: -12px;
+  background-color: var(--highlight);
+  transform: scaleX(0);
+  transform-origin: center;
+
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+
+.panel a.active::after {
+  transform: scaleX(1);
+}
+
+@media (max-width: 499px) {
+  .navbar {
+    gap: 65vw;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .menubutton {
+    display: block;
+    color: var(--text-muted);
+    height: 25px;
+  }
 }
