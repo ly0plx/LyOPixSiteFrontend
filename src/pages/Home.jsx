@@ -1,8 +1,9 @@
 import "../styles/page-css/Home.css";
 import { Helmet } from "react-helmet-async";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import logoFlipped from "../assets/logo-flipped.png";
+import { NavLink } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -11,138 +12,51 @@ export default function Home() {
         <title>LyOPix Coding | Custom Web Solutions</title>
       </Helmet>
       <div className="hero">
-        <div className="main">
-          <h1>Hey! I'm LyOPix!</h1>
+        <img src={logoFlipped} alt="" />
+        <div>
+          <h1>Hey, I'm LyOPix!</h1>
           <p>
-            I'm a software developer specializing in custom web solutions. 
-            I create tailored applications that give you a competitive edge, 
-            and I'm always eager to bring new ideas to life.
+            I'm a software developer specializing in tools and sites for
+            developers. I'm always up to chat, you can contact me anytime if you
+            have questions.
           </p>
-        </div>
-        <div className="bottom">
-          <p>Learn More</p>
-          <FontAwesomeIcon icon={faArrowDown} />
+          <NavLink className="button" to="/contact">
+            Contact Me
+          </NavLink>
         </div>
       </div>
-      <hr />
-      <div className="mee">
-        <h2>Explore My Work</h2>
-        <button>
-          <Link to="/about">About Me</Link>
-        </button>
-        <button>
-          <Link to="/portfolio">View Portfolio</Link>
-        </button>
+      <div className="difference">
+        <div className="difference-content">
+          <h1>The LyOPix Way</h1>
+          <div className="differencecards">
+            <div className="differencecard">
+              <h3>Built for Developers</h3>
+              <p>
+                All of LyOPix tools and sites were made for developers, by a
+                developer.
+              </p>
+            </div>
+            <div className="differencecard">
+              <h3>Built for Learning</h3>
+              <p>
+                Every project is an experiment. They each started as an idea and
+                turned into multiple ideas put into one project.
+              </p>
+            </div>
+            <div className="differencecard">
+              <h3>Built for Exploring</h3>
+              <p>
+                Everything is meant to be explored. Every line of code is built
+                for your viewing.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <hr />
-      <div className="projects">
-        <h2>Featured Projects</h2>
-        <div className="project-list">
-          <div className="project-card">
-            <h3>Project Title</h3>
-            <h5>
-              Status: <span>Completed</span>
-            </h5>
-            <p>
-              A comprehensive description of your project goes here. Highlight 
-              the key features, technologies used, and the problem it solves. 
-              Focus on the value it provides to users and any unique aspects 
-              that make it stand out.
-            </p>
-            <button>
-              <a href="https://example.com/">View Project</a>
-            </button>
-          </div>
-          <div className="project-card">
-            <h3>Project Title</h3>
-            <h5>
-              Status: <span>Completed</span>
-            </h5>
-            <p>
-              A comprehensive description of your project goes here. Highlight 
-              the key features, technologies used, and the problem it solves. 
-              Focus on the value it provides to users and any unique aspects 
-              that make it stand out.
-            </p>
-            <button>
-              <a href="https://example.com/">View Project</a>
-            </button>
-          </div>
-          <div className="project-card">
-            <h3>Project Title</h3>
-            <h5>
-              Status: <span>Completed</span>
-            </h5>
-            <p>
-              A comprehensive description of your project goes here. Highlight 
-              the key features, technologies used, and the problem it solves. 
-              Focus on the value it provides to users and any unique aspects 
-              that make it stand out.
-            </p>
-            <button>
-              <a href="https://example.com/">View Project</a>
-            </button>
-          </div>
-          <div className="project-card">
-            <h3>Project Title</h3>
-            <h5>
-              Status: <span>In Progress</span>
-            </h5>
-            <p>
-              A comprehensive description of your project goes here. Highlight 
-              the key features, technologies used, and the problem it solves. 
-              Focus on the value it provides to users and any unique aspects 
-              that make it stand out.
-            </p>
-            <button>
-              <a href="https://example.com/">View Project</a>
-            </button>
-          </div>
-          <div className="project-card">
-            <h3>Project Title</h3>
-            <h5>
-              Status: <span>Completed</span>
-            </h5>
-            <p>
-              A comprehensive description of your project goes here. Highlight 
-              the key features, technologies used, and the problem it solves. 
-              Focus on the value it provides to users and any unique aspects 
-              that make it stand out.
-            </p>
-            <button>
-              <a href="https://example.com/">View Project</a>
-            </button>
-          </div>
-          <div className="project-card">
-            <h3>Project Title</h3>
-            <h5>
-              Status: <span>Completed</span>
-            </h5>
-            <p>
-              A comprehensive description of your project goes here. Highlight 
-              the key features, technologies used, and the problem it solves. 
-              Focus on the value it provides to users and any unique aspects 
-              that make it stand out.
-            </p>
-            <button>
-              <a href="https://example.com/">View Project</a>
-            </button>
-          </div>
-          <div className="project-card">
-            <h3>Project Title</h3>
-            <h5>
-              Status: <span>Completed</span>
-            </h5>
-            <p>
-              A comprehensive description of your project goes here. Highlight 
-              the key features, technologies used, and the problem it solves. 
-              Focus on the value it provides to users and any unique aspects 
-              that make it stand out.
-            </p>
-            <button>
-              <a href="https://example.com/">View Project</a>
-            </button>
-          </div>
+      <div className="latestprojects">
+        <div>
+          <h1>Latest Projects</h1>
+          <p>Here is a list of projects that i have been experimenting on recently. Feel free to check out the tools and sites, and you can check the code too.</p>
         </div>
       </div>
     </div>

@@ -12,7 +12,7 @@ export default function Navbar() {
 
   // scroll behavior
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 200);
+    const onScroll = () => setScrolled(window.scrollY > window.innerHeight - 70);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);

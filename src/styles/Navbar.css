@@ -1,11 +1,12 @@
 .navbar {
   display: flex;
+  width: 100%;
   height: 70px;
   background-color: var(--bg);
   align-items: center;
   justify-content: center;
   padding-left: 20px;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 100;
 
@@ -81,7 +82,7 @@
   box-sizing: border-box;
   padding: 10px;
   border: 2px solid var(--border-muted);
-  border-radius: 10px;
+  border-radius: 12px;
   font-weight: 600;
 
   transition:
@@ -97,7 +98,7 @@
 
 .cta:hover {
   border-color: var(--border);
-  background-color: color-mix(in srgb, var(--highlight) 20%, transparent);
+  background-color: color-mix(in srgb, var(--highlight) 30%, transparent);
 }
 
 .cta.active {
@@ -200,7 +201,7 @@
   transform: scaleX(1);
 }
 
-@media (max-width: 499px) {
+@media (max-width: 600px) {
   .navbar {
     gap: 65vw;
   }
