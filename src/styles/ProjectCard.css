@@ -1,0 +1,32 @@
+.projectcard {
+  min-width: 300px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg);
+}
+
+.projectcard h3 {
+  font-size: 25px;
+  color: var(--text);
+}
+
+.projectcard p {
+  color: var(--text-muted);
+  font-size: 15px;
+}
+
+.tags {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+  font-size: 15px;
+}
+
+.tag {
+  padding: 8px;
+  border: 1px solid var(--border-muted);
+  border-radius: 6px;
+  background: var(--bg-light);
+  color: var(--text);
+}

@@ -1,0 +1,59 @@
+/* Carousel.css */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  background-color: transparent;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%; /* Add explicit width */
+  min-width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.3s ease;
+  height: 100%;
+  width: fit-content;
+  background-color: transparent;
+}
+
+.carousel-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: var(--text);
+  background-color: transparent;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text);
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  background: transparent;
+}
+
+.carousel-btn.prev {
+  left: 16px;
+}
+
+.carousel-btn.next {
+  right: 16px;
+}

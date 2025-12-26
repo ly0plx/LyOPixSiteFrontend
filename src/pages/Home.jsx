@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import logoFlipped from "../assets/logo-flipped.png";
 import { NavLink } from "react-router-dom";
+import Carousel from "../components/Carousel";
+import ProjectCard from "../components/ProjectCard";
 
 export default function Home() {
   return (
@@ -53,11 +55,34 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="latestprojects">
+      <div className="latestsites">
         <div>
-          <h1>Latest Projects</h1>
-          <p>Here is a list of projects that i have been experimenting on recently. Feel free to check out the tools and sites, and you can check the code too.</p>
+          <h1>Latest Sites</h1>
+          <p>Here is a list of apps and sites that i have been experimenting on recently. Feel free to check out the tools and sites, and you can check the code too.</p>
         </div>
+        <Carousel slides={[
+          { content: <ProjectCard title="Hiii" content="How is everyone" tags={["React.js", "Vue.js"]} type="Site" />},
+          { content: <ProjectCard title="Hiii" content="How is everyone" tags={["React.js", "Vue.js"]} type="Tool" />}
+        ]} className="latestcarousel" />
+      </div>
+      <div className="latesttools">
+        <div>
+          <h1>Latest Tools</h1>
+          <p>This is a list of tools that i have made and expiremented on recently. Feel free to take a peek at the code, or the tool, or both! </p>
+        </div>
+        <Carousel slides={[
+          { content: <ProjectCard title="Hiii" content="How is everyone" tags={["React.js", "Vue.js"]} type="Tool" /> },
+          { content: <ProjectCard title="Hiii" content="How is everyone" tags={["React.js", "Vue.js"]} type="Tool" /> },
+          { content: <ProjectCard title="Hiii" content="How is everyone" tags={["React.js", "Vue.js"]} type="Tool" /> },
+          { content: <ProjectCard title="Hiii" content="How is everyone" tags={["React.js", "Vue.js"]} type="Tool" /> },
+          { content: <ProjectCard title="Hiii" content="How is everyone" tags={["React.js", "Vue.js"]} type="Tool" /> },
+          { content: <ProjectCard title="Hiii" content="How is everyone" tags={["React.js", "Vue.js"]} type="Tool" /> },
+          { content: <ProjectCard title="Hiii" content="How is everyone" tags={["React.js", "Vue.js"]} type="Tool" /> },
+          { content: <ProjectCard title="Hiii" content="How is everyone" tags={["React.js", "Vue.js"]} type="Tool" /> },
+          { content: <ProjectCard title="Hiii" content="How is everyone" tags={["React.js", "Vue.js"]} type="Tool" /> },
+          { content: <ProjectCard title="Hiii" content="How is everyone" tags={["React.js", "Vue.js"]} type="Tool" /> },
+          { content: <ProjectCard title="Hiii" content="How is everyone" tags={["React.js", "Vue.js"]} type="Tool" /> }
+        ]} />
       </div>
     </div>
   );

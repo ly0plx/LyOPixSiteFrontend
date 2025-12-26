@@ -112,22 +112,66 @@
   border-radius: 10px;
   background: var(--bg-light);
   line-height: 24px;
-  box-shadow: 0 2px 999px var(--highlight);
+  box-shadow: 0 2px 300px var(--highlight);
 }
 
 /* #endregion */
 
-/* #region Latest Projects */
-.latestprojects {
+/* #region Latest Sites */
+.latestsites {
   display: flex;
-  width: 100%;
-  background-color: var(--bg-light);
+  /* flex-direction: column; */
+  gap: 30px;
+  padding: 50px;
+  background-color: var(--bg-dark);
   align-items: center;
   justify-content: center;
 }
 
-.latestprojects div {
-  width: 30%;
+.latestsites > div:first-child {
+  width: 100%;
+  max-width: 500px;
+}
+
+.latestsites h1 {
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.latestsites p {
+  color: var(--text-muted);
+}
+
+.latestcarousel {
+  width: 100%;
+  max-width: 800px;
+}
+
+/* #endregion */
+
+/* #region Latest Tools */
+.latesttools {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 30px;
+  padding: 50px;
+  background-color: var(--bg-dark);
+  align-items: center;
+  justify-content: center;
+}
+
+.latesttools > div:first-child {
+  width: 100%;
+  max-width: 500px;
+}
+
+.latesttools h1 {
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.latesttools p {
+  color: var(--text-muted);
 }
 
 /* #endregion */
