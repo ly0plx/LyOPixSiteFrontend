@@ -66,10 +66,6 @@ export default function Home() {
         ]} className="latestcarousel" />
       </div>
       <div className="latesttools">
-        <div>
-          <h1>Latest Tools</h1>
-          <p>This is a list of tools that i have made and expiremented on recently. Feel free to take a peek at the code, or the tool, or both! </p>
-        </div>
         <Carousel slides={[
           { content: <ProjectCard title="Hiii" content="How is everyone" tags={["React.js", "Vue.js"]} type="Tool" /> },
           { content: <ProjectCard title="Hiii" content="How is everyone" tags={["React.js", "Vue.js"]} type="Tool" /> },
@@ -83,6 +79,18 @@ export default function Home() {
           { content: <ProjectCard title="Hiii" content="How is everyone" tags={["React.js", "Vue.js"]} type="Tool" /> },
           { content: <ProjectCard title="Hiii" content="How is everyone" tags={["React.js", "Vue.js"]} type="Tool" /> }
         ]} />
+        <div>
+          <h1>Latest Tools</h1>
+          <p>This is a list of tools that i have made and expiremented on recently. Feel free to take a peek at the code, or the tool, or both! </p>
+        </div>
+      </div>
+      <div className="quotes">
+        <div className="quote-content">
+          <span className="quote-mark open">"</span>
+          <span className="quote">Programs must be written for people to read, and only incidentally for machines to execute.</span>
+          <span className="quote-mark close">"</span>
+          <div className="author">— Harold Abelson</div>
+        </div>
       </div>
     </div>
   );

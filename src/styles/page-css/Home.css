@@ -140,6 +140,7 @@
 
 .latestsites p {
   color: var(--text-muted);
+  line-height: 24px;
 }
 
 .latestcarousel {
@@ -160,7 +161,7 @@
   justify-content: center;
 }
 
-.latesttools > div:first-child {
+.latesttools > div:last-child {
   width: 100%;
   max-width: 500px;
 }
@@ -172,6 +173,78 @@
 
 .latesttools p {
   color: var(--text-muted);
+  line-height: 24px;
+}
+
+/* #endregion */
+
+/* #region Quotes */
+.quotes {
+  background: var(--bg-light);
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+  padding: 60px 20px;
+  color: var(--text);
+  align-items: center;
+  justify-content: center;
+  font-family: "Georgia", serif;
+  position: relative;
+}
+
+.quote-content {
+  max-width: 800px;
+  text-align: center;
+  position: relative;
+  padding: 0 40px;
+}
+
+.quote-mark {
+  color: var(--text-muted);
+  font-size: 80px;
+  line-height: 0;
+  opacity: 0.3;
+  font-family: Georgia, serif;
+  position: absolute;
+}
+
+.quote-mark.open {
+  top: -10px;
+  left: -10px;
+}
+
+.quote-mark.close {
+  bottom: -40px;
+  right: -10px;
+}
+
+.quote {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  font-style: italic;
+  margin: 20px 0;
+  display: block;
+}
+
+.author {
+  margin-top: 30px;
+  font-size: 1rem;
+  color: var(--text-muted);
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .quote {
+    font-size: 1.25rem;
+  }
+  
+  .quote-mark {
+    font-size: 60px;
+  }
+  
+  .quote-content {
+    padding: 0 30px;
+  }
 }
 
 /* #endregion */
