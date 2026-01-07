@@ -9,7 +9,7 @@
 
 .carousel-inner {
   position: relative;
-  width: 100%; /* Add explicit width */
+  width: 100%;
   min-width: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
@@ -56,4 +56,13 @@
 
 .carousel-btn.next {
   right: 16px;
+}
+
+.carousel-btn.autoplay {
+  bottom: 16px;
+  top: auto;
+  transform: none;
+  left: 50%;
+  margin-left: -20px;
+  font-size: 14px;
 }

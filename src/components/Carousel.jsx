@@ -3,6 +3,7 @@ import "../styles/Carousel.css";
 
 export default function Carousel({ slides = [] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isAutoplayOn, setIsAutoplayOn] = useState(true);
 
   const innerRef = useRef(null);
   const trackRef = useRef(null);
@@ -34,11 +35,12 @@ export default function Carousel({ slides = [] }) {
     setCurrentIndex((prev) => (prev - 1 + slides.length) % slides.length);
   }, [slides.length]);
 
-  // Auto-play (already solid)
+  // Auto-play with toggle
   useEffect(() => {
+    if (!isAutoplayOn) return;
     const interval = setInterval(next, 3000);
     return () => clearInterval(interval);
-  }, [next]);
+  }, [next, isAutoplayOn]);
 
   return (
     <div className="carousel">
@@ -77,6 +79,14 @@ export default function Carousel({ slides = [] }) {
           aria-label="Next slide"
         >
           ›
+        </button>
+
+        <button
+          className="carousel-btn autoplay"
+          onClick={() => setIsAutoplayOn(!isAutoplayOn)}
+          aria-label={isAutoplayOn ? "Pause autoplay" : "Start autoplay"}
+        >
+          {isAutoplayOn ? "⏸" : "▶"}
         </button>
       </div>
     </div>
