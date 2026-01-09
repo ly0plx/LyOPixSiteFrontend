@@ -57,3 +57,10 @@ html {
   color: var(--text);
   background: rgba(255, 0, 0, 0.3);
 }
+
+hr {
+  width: 80%;
+  border: none;
+  border-top: 3px solid var(--border-muted);
+  border-radius: 30px;
+}
