@@ -61,6 +61,6 @@ html {
 hr {
   width: 80%;
   border: none;
-  border-top: 3px solid var(--border-muted);
+  border-top: 1.5px solid var(--border-muted);
   border-radius: 30px;
 }

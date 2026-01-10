@@ -9,12 +9,13 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-top: 1.5px solid var(--border);
 }
 
 .footer-top {
   gap: 500px;
   margin: 0;
-  padding: 40px;
+  padding: 100px;
   display: flex;
   color: var(--text);
   justify-content: center;
@@ -32,12 +33,12 @@ footer {
   display: flex;
   justify-content: center;
   gap: 70px;
+  padding: 50px 0;
 }
 
 .footer-main ul {
   list-style-type: none;
   padding: 0;
-  
 }
 
 .footer-main h4 {
@@ -52,4 +53,42 @@ footer {
 .footer-main ul li a {
   text-decoration: none;
   color: var(--text-muted);
+}
+
+.footer-main ul li a svg {
+  margin: 0 4px 0 0;
+}
+
+.footer-bottom {
+  max-width: 100%;
+  display: flex;
+  padding: 0 200px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.footer-bottom ul {
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+.footer-bottom ul li {
+  margin: 0 10px;
+}
+
+.footer-bottom ul:nth-child(3) {
+  font-size: 1px;
+}
+
+.footer-bottom div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-bottom div svg:hover {
+  cursor: pointer;
 }

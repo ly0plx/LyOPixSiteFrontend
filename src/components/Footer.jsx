@@ -34,6 +34,7 @@ export default function Footer() {
           <ul>
             <li>Mon-Fri: 5pm - 7pm</li>
             <li>Saturday: 10am - 6pm</li>
+            <li>Sunday: None</li>
           </ul>
         </div>
         <div className="connect">
@@ -42,19 +43,19 @@ export default function Footer() {
             <li>
               <Link to="https://github.com/ly0plx">
                 <FontAwesomeIcon icon={faGithub} />
-                ly0plx/LyOPix
+                <span>ly0plx/LyOPix</span>
               </Link>
             </li>
             <li>
               <Link to="mailto:tanner@lyopix.com">
                 <FontAwesomeIcon icon={faEnvelope} />
-                tanner@lyopix.com
+                <span>tanner@lyopix.com</span>
               </Link>
             </li>
             <li>
               <Link to="tel:8019002497">
                 <FontAwesomeIcon icon={faPhone} />
-                +1 (801)-900-4297
+                <span>+1 (801)-900-4297</span>
               </Link>
             </li>
           </ul>
@@ -90,14 +91,17 @@ export default function Footer() {
           </ul>
         </div>
       </div>
+      <hr />
       <div className="footer-bottom">
         <span>&copy; Tanner Ordonez</span>
-        <ul>
-          <li>Privacy Policy</li>
-          <li>·</li>
-          <li>Terms Of Use</li>
-        </ul>
-        <FontAwesomeIcon icon={faArrowUp} onClick={scrollToTop} />
+        <div>
+          <ul>
+            <li>Privacy Policy</li>
+            <li>·</li>
+            <li>Terms Of Use</li>
+          </ul>
+          <FontAwesomeIcon icon={faArrowUp} onClick={scrollToTop} />
+        </div>
       </div>
     </footer>
   );
