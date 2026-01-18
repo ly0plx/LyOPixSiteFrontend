@@ -92,7 +92,8 @@
   text-align: center;
 }
 
-.difference h1, h3 {
+.difference h1,
+.difference h3 {
   color: var(--text);
 }
 

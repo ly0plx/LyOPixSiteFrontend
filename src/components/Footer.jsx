@@ -1,6 +1,4 @@
 import "../styles/Footer.css";
-import SingleInput from "../components/SingleInput";
-import SocialLinks from "../components/SocialLinks";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link, NavLink } from "react-router-dom";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";

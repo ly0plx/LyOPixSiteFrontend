@@ -47,7 +47,7 @@ footer {
 
 .footer-main ul li {
   color: var(--text-muted);
-  padding: 5px 0;
+  padding: 6px 0;
 }
 
 .footer-main ul li a {
@@ -80,7 +80,7 @@ footer {
 }
 
 .footer-bottom ul:nth-child(3) {
-  font-size: 1px;
+  font-size: 2px;
 }
 
 .footer-bottom div {
@@ -135,11 +135,11 @@ footer {
   }
 
   .footer-top h1 {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
 
   .footer-top h3 {
-    font-size: 1rem;
+    font-size: 16px;
   }
 
   .footer-main {
@@ -163,7 +163,7 @@ footer {
 
   .footer-bottom div {
     flex-direction: column;
-    gap: 15px;
+    gap: 16px;
   }
 
   .footer-bottom ul {
@@ -174,35 +174,35 @@ footer {
 
 @media (max-width: 480px) {
   .footer-top {
-    padding: 30px 15px;
+    padding: 30px 14px;
   }
 
   .footer-top h1 {
-    font-size: 1.25rem;
+    font-size: 20px;
   }
 
   .footer-top h3 {
-    font-size: 0.9rem;
+    font-size: 14px;
   }
 
   .footer-main {
-    padding: 20px 15px;
+    padding: 20px 16px;
   }
 
   .footer-main h4 {
-    font-size: 1rem;
+    font-size: 16px;
   }
 
   .footer-main ul li {
-    font-size: 0.9rem;
+    font-size: 14px;
   }
 
   .footer-bottom {
-    padding: 15px;
-    font-size: 0.85rem;
+    padding: 16px;
+    font-size: 14px;
   }
 
   .footer-bottom ul li {
-    margin: 0 5px;
+    margin: 0 6px;
   }
 }

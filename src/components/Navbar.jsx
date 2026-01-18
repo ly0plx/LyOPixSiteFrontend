@@ -25,7 +25,7 @@ export default function Navbar() {
   return (
     <>
       <nav className={`navbar ${scrolled ? "nav-scrolled" : ""}`}>
-        <img src={logo} alt="Logo" className="icon" />
+        <img src={logo} alt="LyOPix Logo" className="icon" />
 
         <ul className="nav-links">
           <li><NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>Home</NavLink></li>
@@ -56,7 +56,7 @@ export default function Navbar() {
 
       {/* Slide Panel */}
       <div className={`panel ${menuOpen ? "open" : ""}`}>
-        <div className="close" onClick={() => setMenuOpen(false)}>✕</div>
+        <div className="close" onClick={() => setMenuOpen(false)}><FontAwesomeIcon icon={faXmark} aria-label="Close Mobile Navbar"/></div>
         <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>Home</NavLink>
         <NavLink to="/tools" className={({ isActive }) => isActive ? "active" : ""}>Tools</NavLink>
         <NavLink to="/blog" className={({ isActive }) => isActive ? "active" : ""}>Blog</NavLink>

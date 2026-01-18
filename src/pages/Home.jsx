@@ -1,7 +1,5 @@
 import "../styles/page-css/Home.css";
 import { Helmet } from "react-helmet-async";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
 import logoFlipped from "../assets/logo-flipped.png";
 import { NavLink } from "react-router-dom";
 import Carousel from "../components/Carousel";
@@ -14,7 +12,7 @@ export default function Home() {
         <title>LyOPix Coding | Custom Web Solutions</title>
       </Helmet>
       <div className="hero">
-        <img src={logoFlipped} alt="" />
+        <img src={logoFlipped} alt="LyOPix Logo" />
         <div>
           <h1>Hey, I'm LyOPix!</h1>
           <p>
