@@ -40,13 +40,13 @@ html {
 .button {
   display: flex;
   padding: 15px;
-  border: 2px solid var(--highlight);
+  border: 1.5px solid var(--highlight);
   border-radius: 12px;
   text-decoration: none;
   color: var(--text-muted);
   background-color: var(--bg-light);
   width: fit-content;
-  transition: background 0.2 ease;
+  transition: background-color 0.2 ease;
 }
 
 .button:hover {

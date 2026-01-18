@@ -34,12 +34,20 @@
   height: 100vh;
   align-items: center;
   justify-content: center;
+  padding: 0 20px;
 }
 
 .hero img {
   opacity: 0.5;
   z-index: 0;
   height: 100vh;
+  max-width: 50%;
+  object-fit: contain;
+}
+
+.hero > div {
+  max-width: 600px;
+  padding: 0 20px;
 }
 
 .hero h1 {
@@ -59,37 +67,29 @@
   padding-bottom: 25px;
 }
 
-@media (max-width: 1000px) {
-  .hero {
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-  }
-
-  .hero img {
-    height: 200px;
-  }
-}
-
 /* #endregion */
 
 /* #region The LyOPix Way */
 .difference {
   display: flex;
-  width: 100%;
+  max-width: 100%;
   background-color: var(--bg);
   align-items: center;
   justify-content: center;
+  padding: 0 20px;
 }
 
 .difference-content {
   display: flex;
   flex-direction: column;
   padding-bottom: 120px;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .difference h1 {
   margin: 60px 0;
+  text-align: center;
 }
 
 .difference h1, h3 {
@@ -103,10 +103,13 @@
 .differencecards {
   display: flex;
   gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .differencecard {
-  max-width: 250px;
+  width: min-content;
+  flex: 1;
   padding: 20px;
   border: 1px solid var(--border);
   border-radius: 10px;
@@ -120,7 +123,6 @@
 /* #region Latest Sites */
 .latestsites {
   display: flex;
-  /* flex-direction: column; */
   gap: 30px;
   padding: 50px;
   background-color: var(--bg-dark);
@@ -153,7 +155,6 @@
 /* #region Latest Tools */
 .latesttools {
   display: flex;
-  /* flex-direction: column; */
   gap: 30px;
   padding: 50px;
   background-color: var(--bg-dark);
@@ -164,6 +165,7 @@
 .latesttools > div:last-child {
   width: 100%;
   max-width: 500px;
+  order: 2;
 }
 
 .latesttools h1 {
@@ -233,7 +235,126 @@
   font-style: normal;
 }
 
+/* #endregion */
+
+/* #region Responsive adjustments */
+
+/* Large tablets and small desktops */
+@media (max-width: 1200px) {
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .latestsites,
+  .latesttools {
+    padding: 40px 30px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 1000px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+
+  .hero img {
+    height: 200px;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .difference-content {
+    padding-bottom: 80px;
+  }
+
+  .differencecards {
+    gap: 20px;
+  }
+
+  .latestsites,
+  .latesttools {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .latestsites > div:first-child,
+  .latesttools > div:last-child {
+    max-width: 100%;
+  }
+
+  .latesttools > div:last-child {
+    order: 0;
+  }
+}
+
+/* Mobile devices */
 @media (max-width: 768px) {
+  .hero {
+    padding: 30px 15px;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    padding-bottom: 20px;
+  }
+
+  .hero .button {
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+  }
+
+  .difference {
+    padding: 0 15px;
+  }
+
+  .difference-content {
+    padding-bottom: 60px;
+  }
+
+  .difference h1 {
+    margin: 40px 0;
+    font-size: 1.75rem;
+  }
+
+  .differencecards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .differencecard {
+    width: 80%;
+  }
+
+  .latestsites,
+  .latesttools {
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .latestsites h1,
+  .latesttools h1 {
+    font-size: 1.75rem;
+  }
+
   .quote {
     font-size: 1.25rem;
   }
@@ -245,21 +366,99 @@
   .quote-content {
     padding: 0 30px;
   }
-}
 
-/* #endregion */
-
-/* #region Responsive adjustments */
-@media (max-width: 768px) {
   .project-list {
     grid-template-columns: 1fr;
   }
-  
-  .mee button {
-    display: block;
-    width: 100%;
-    max-width: 300px;
-    margin: 0.5rem auto;
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .hero {
+    padding: 20px 10px;
+  }
+
+  .hero img {
+    height: 150px;
+    margin-bottom: 20px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .difference h1 {
+    margin: 30px 0;
+    font-size: 1.5rem;
+  }
+
+  .difference-content {
+    padding-bottom: 40px;
+  }
+
+  .differencecard {
+    padding: 15px;
+  }
+
+  .latestsites,
+  .latesttools {
+    padding: 20px 15px;
+  }
+
+  .latestsites h1,
+  .latesttools h1 {
+    font-size: 1.5rem;
+  }
+
+  .latestsites p,
+  .latesttools p {
+    font-size: 0.9rem;
+  }
+
+  .quotes {
+    padding: 40px 15px;
+    min-height: 300px;
+  }
+
+  .quote {
+    font-size: 1.1rem;
+  }
+
+  .quote-mark {
+    font-size: 50px;
+  }
+
+  .quote-content {
+    padding: 0 20px;
+  }
+
+  .author {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .difference h1,
+  .latestsites h1,
+  .latesttools h1 {
+    font-size: 1.25rem;
+  }
+
+  .quote {
+    font-size: 1rem;
   }
 }
 

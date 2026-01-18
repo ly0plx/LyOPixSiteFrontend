@@ -93,7 +93,7 @@ export default function Footer() {
       </div>
       <hr />
       <div className="footer-bottom">
-        <span>&copy; Tanner Ordonez</span>
+        <span>&copy; LyOPix</span>
         <div>
           <ul>
             <li>Privacy Policy</li>
