@@ -1,21 +1,11 @@
 footer {
-  background: linear-gradient(
-    to bottom right,
-    var(--bg-dark),
-    var(--bg),
-    var(--bg-light)
-  );
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-top: 1.5px solid var(--border);
+  background: var(--bg-dark);
 }
 
 .footer-top {
   gap: 500px;
   margin: 0;
-  padding: 100px;
+  padding: 45px;
   display: flex;
   color: var(--text);
   justify-content: center;
@@ -34,6 +24,26 @@ footer {
   justify-content: center;
   gap: 70px;
   padding: 50px 0;
+  background: transparent;
+}
+
+.footer-main div {
+  position: relative;
+  background: transparent;
+  z-index: 999;
+}
+
+.footer-main div::after {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  right: -50px;
+  bottom: -50px;
+  background: var(--bg-light);
+  filter: blur(50px);
+  z-index: -1;
+  opacity: 1; /* Adjust as needed */
 }
 
 .footer-main ul {
@@ -77,6 +87,15 @@ footer {
 
 .footer-bottom ul li {
   margin: 0 10px;
+}
+
+.footer-bottom ul li a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.footer-bottom ul li a:hover {
+  color: var(--text);
 }
 
 .footer-bottom ul:nth-child(3) {

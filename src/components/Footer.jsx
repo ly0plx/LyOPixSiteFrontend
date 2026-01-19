@@ -94,9 +94,9 @@ export default function Footer() {
         <span>&copy; LyOPix</span>
         <div>
           <ul>
-            <li>Privacy Policy</li>
+            <li><Link to="/legal/privacy" target="_blank">Privacy Policy</Link></li>
             <li>·</li>
-            <li>Terms Of Use</li>
+            <li><Link to="/legal/terms" target="_blank">Terms of Use</Link></li>
           </ul>
           <FontAwesomeIcon icon={faArrowUp} onClick={scrollToTop} />
         </div>
