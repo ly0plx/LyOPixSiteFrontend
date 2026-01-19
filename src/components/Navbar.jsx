@@ -10,10 +10,22 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
 
+  const NAVBAR_HEIGHT = 70;
+  const NAVBAR_SCROLLED_HEIGHT = 60;
+
   // scroll behavior
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > window.innerHeight - 70);
-    window.addEventListener("scroll", onScroll);
+    let ticking = false;
+    const onScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setScrolled(window.scrollY > window.innerHeight - NAVBAR_HEIGHT);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
@@ -28,11 +40,46 @@ export default function Navbar() {
         <img src={logo} alt="LyOPix Logo" className="icon" />
 
         <ul className="nav-links">
-          <li><NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>Home</NavLink></li>
-          <li><NavLink to="/tools" className={({ isActive }) => isActive ? "active" : ""}>Tools</NavLink></li>
-          <li><NavLink to="/blog" className={({ isActive }) => isActive ? "active" : ""}>Blog</NavLink></li>
-          <li><NavLink to="/lab" className={({ isActive }) => isActive ? "active" : ""}>Lab</NavLink></li>
-          <li><NavLink to="/about" className={({ isActive }) => isActive ? "active" : ""}>About</NavLink></li>
+          <li>
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/tools"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Tools
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/blog"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Blog
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/lab"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Lab
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/about"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              About
+            </NavLink>
+          </li>
           <li>
             <NavLink
               to="/contact"
@@ -56,13 +103,45 @@ export default function Navbar() {
 
       {/* Slide Panel */}
       <div className={`panel ${menuOpen ? "open" : ""}`}>
-        <div className="close" onClick={() => setMenuOpen(false)}><FontAwesomeIcon icon={faXmark} aria-label="Close Mobile Navbar"/></div>
-        <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>Home</NavLink>
-        <NavLink to="/tools" className={({ isActive }) => isActive ? "active" : ""}>Tools</NavLink>
-        <NavLink to="/blog" className={({ isActive }) => isActive ? "active" : ""}>Blog</NavLink>
-        <NavLink to="/lab" className={({ isActive }) => isActive ? "active" : ""}>Lab</NavLink>
-        <NavLink to="/about" className={({ isActive }) => isActive ? "active" : ""}>About</NavLink>
-        <NavLink to="/contact" className={({ isActive }) => `cta ${isActive ? "active" : ""}`}>Contact Me</NavLink>
+        <div className="close" onClick={() => setMenuOpen(false)}>
+          <FontAwesomeIcon icon={faXmark} aria-label="Close Mobile Navbar" />
+        </div>
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="/tools"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Tools
+        </NavLink>
+        <NavLink
+          to="/blog"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Blog
+        </NavLink>
+        <NavLink
+          to="/lab"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Lab
+        </NavLink>
+        <NavLink
+          to="/about"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          About
+        </NavLink>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) => `cta ${isActive ? "active" : ""}`}
+        >
+          Contact Me
+        </NavLink>
       </div>
     </>
   );
