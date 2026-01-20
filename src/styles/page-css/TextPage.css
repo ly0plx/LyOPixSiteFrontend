@@ -1,6 +1,6 @@
 .text-page {
   min-height: calc(100vh - 7rem);
-  background-color: var(--bg);
+  background-color: var(--bg-dark);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,9 +14,9 @@
 }
 
 .text-page-card {
-  background-color: var(--surface);
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
+  background-color: var(--bg);
+  border-radius: 10px;
+  border: 1.5px solid var(--border);
   padding: 2rem;
   position: relative;
   overflow: hidden;
@@ -45,7 +45,7 @@
 .text-page-content {
   font-size: 1.125rem;
   line-height: 1.8;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   white-space: pre-wrap;
 }
 

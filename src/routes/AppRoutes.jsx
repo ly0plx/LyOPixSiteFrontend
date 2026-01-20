@@ -13,7 +13,25 @@ export default function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
+      <Route path="/about" element={<TextPage title="About Me" content="Irure enim exercitation reprehenderit aute sint minim amet ea aliqua exercitation. Adipisicing laboris culpa irure pariatur esse laborum pariatur. Ad proident deserunt voluptate veniam sunt exercitation reprehenderit minim. Cillum amet reprehenderit aute cillum. Mollit nisi ea eiusmod et do minim ipsum est eiusmod. Ex consequat fugiat Lorem velit et sit magna.
+
+Minim fugiat consequat quis elit. Culpa incididunt velit minim id. Excepteur commodo dolor reprehenderit ipsum et ea. Veniam ullamco irure dolore ex Lorem minim tempor consectetur cupidatat exercitation sit mollit tempor velit. Nulla sint occaecat nostrud do. Culpa elit in sunt exercitation proident nostrud aute exercitation ipsum nulla proident esse.
+
+In magna excepteur reprehenderit esse enim elit duis elit mollit ipsum dolore magna magna. Reprehenderit exercitation consequat ullamco cupidatat do sunt pariatur amet eu nisi dolore ipsum reprehenderit. Nisi irure id occaecat eu tempor quis aliquip aliquip nostrud eu cupidatat qui commodo in. Nostrud ullamco exercitation Lorem ea veniam sit esse occaecat laboris magna exercitation laborum deserunt. Labore anim voluptate consequat cupidatat velit tempor aliquip duis elit id eiusmod.
+
+Do deserunt culpa ad ut aute voluptate sint magna proident. Reprehenderit adipisicing duis non Lorem adipisicing aliqua laborum do proident anim. Commodo in consectetur amet pariatur cupidatat id eiusmod ipsum velit veniam ex. Amet exercitation esse anim quis dolore duis irure ut. Ullamco exercitation sunt elit do labore excepteur sint dolor.
+
+Occaecat ipsum aliqua consequat non. Non qui consectetur quis cillum commodo ea voluptate ad sint voluptate sit voluptate fugiat. Laborum tempor est veniam voluptate duis esse est laboris ipsum dolor cupidatat voluptate cillum. Irure eiusmod adipisicing adipisicing ut ut veniam consequat non ex. Adipisicing tempor consequat laborum ex sint anim dolore minim ipsum id excepteur. In fugiat aliquip ipsum magna esse sint.
+
+Ex excepteur elit duis mollit ex quis cupidatat sit. Ea nisi eu exercitation do cillum. Ex magna quis quis anim nisi. Nostrud incididunt fugiat minim ad consectetur officia sit ea mollit nisi anim non. Consequat aliquip voluptate cillum sunt eu commodo sunt cillum sit.
+
+Laborum labore aliquip dolore proident non in. Nulla velit amet commodo commodo cillum cillum eu quis adipisicing qui esse minim. Aute laboris dolor aliqua do eu nostrud ut. Proident deserunt adipisicing do cillum sint eiusmod. Et cupidatat sit exercitation pariatur voluptate excepteur fugiat nostrud anim dolore. Elit anim irure velit cillum ut. Nostrud cillum ex non eu sint irure ipsum consequat fugiat fugiat occaecat.
+
+Nostrud anim nisi velit dolore pariatur reprehenderit et laboris proident cupidatat. Dolore in duis cillum in reprehenderit adipisicing. Consectetur sunt ullamco mollit aliquip dolor consequat.
+
+Excepteur dolor voluptate magna est mollit anim est cillum aute qui irure incididunt nostrud. Irure eiusmod cillum aliqua sunt ipsum incididunt in reprehenderit occaecat eiusmod eu est culpa. Enim dolore consectetur ullamco veniam proident amet amet do Lorem. Commodo id ullamco magna eu enim velit aliqua non eu in aliquip mollit. Adipisicing sunt excepteur sint sit culpa do ex occaecat deserunt tempor. Occaecat laboris anim exercitation consequat consectetur do eu. Aliquip consectetur Lorem enim labore adipisicing.
+
+Ad sint aliqua consectetur dolor pariatur non laborum commodo qui aliquip et dolor. Irure do ex consequat adipisicing occaecat magna. Aute exercitation cupidatat incididunt officia ex amet laboris laboris consequat aliqua reprehenderit enim. Pariatur tempor qui dolor laborum ex anim. Qui ad dolor minim laboris. Amet sit nostrud excepteur Lorem amet consequat reprehenderit proident quis nisi." />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/blog" element={<Blog />} />
       <Route
