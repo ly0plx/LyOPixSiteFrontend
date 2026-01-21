@@ -6,4 +6,5 @@
   height: 100vh;
   color: var(--text);
   text-align: center;
+  background: var(--bg-dark);
 }

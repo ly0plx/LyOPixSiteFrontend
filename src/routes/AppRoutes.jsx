@@ -1,7 +1,6 @@
 // AppRoutes.jsx
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
-import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Blog from "../pages/Blog";
 import BlogPage from "../pages/BlogPage";
@@ -39,6 +38,7 @@ Ad sint aliqua consectetur dolor pariatur non laborum commodo qui aliquip et dol
         element={
           <BlogPage
             details={{
+              tag: "firstpost",
               image: "https://picsum.photos/300/200",
               title: "First Post",
               content:

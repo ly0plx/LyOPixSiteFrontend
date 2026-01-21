@@ -1,7 +1,7 @@
 import "../styles/Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link, NavLink } from "react-router-dom";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faDiscord, faGithub } from "@fortawesome/free-brands-svg-icons";
 import {
   faArrowUp,
   faEnvelope,
@@ -54,6 +54,12 @@ export default function Footer() {
               <Link to="tel:8019002497">
                 <FontAwesomeIcon icon={faPhone} />
                 <span>+1 (801)-900-4297</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="https://discord.gg/EK89tgrmm2">
+              <FontAwesomeIcon icon={faDiscord} />
+              <span>Discord Server</span>
               </Link>
             </li>
           </ul>

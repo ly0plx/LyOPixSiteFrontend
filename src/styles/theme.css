@@ -47,6 +47,7 @@ html {
 
 .button:hover {
   background-color: color-mix(in srgb, var(--highlight) 30%, transparent);
+  cursor: pointer;
 }
 
 ::selection {

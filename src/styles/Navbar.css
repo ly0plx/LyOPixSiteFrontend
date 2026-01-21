@@ -47,7 +47,6 @@
   text-decoration: none;
   position: relative;
   display: block;
-
   transition: color 0.2s ease;
 }
 
@@ -82,7 +81,7 @@
   box-sizing: border-box;
   padding: 10px;
   border: 2px solid var(--border-muted);
-  border-radius: 12px;
+  border-radius: 9px;
   font-weight: 600;
 
   transition:
