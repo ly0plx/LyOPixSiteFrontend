@@ -1,6 +1,5 @@
 .post-page {
   margin: 0;
-  border-radius: 10px;
   min-height: 100vh;
   padding: 0;
   text-align: left;
@@ -8,6 +7,8 @@
   justify-content: center;
   display: flex;
   width: 100%;
+  background-color: var(--bg-dark);
+  color: var(--text);
 }
 
 .post-container {
@@ -22,8 +23,9 @@
 .post-container img {
   width: 500px;
   height: 300px;
-  border: 1.5px solid var(--accent);
+  border: 1.5px solid var(--border);
   border-radius: 10px;
+  box-shadow: 0 0 50px var(--bg-light);
 }
 
 .post-container h1 {

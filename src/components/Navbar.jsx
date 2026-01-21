@@ -50,10 +50,10 @@ export default function Navbar() {
           </li>
           <li>
             <NavLink
-              to="/tools"
+              to="/projects"
               className={({ isActive }) => (isActive ? "active" : "")}
             >
-              Tools
+              Projects
             </NavLink>
           </li>
           <li>
