@@ -1,5 +1,5 @@
  
-Copyright (c) 2026 LyOPix
+Copyright &copy; 2026 LyOPix
 
 All rights reserved.
 
