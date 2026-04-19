@@ -3,17 +3,17 @@ import { Helmet } from "react-helmet-async";
 import logoFlipped from "../assets/logo-flipped.png";
 import { NavLink } from "react-router-dom";
 import Carousel from "../components/Carousel";
-import ProjectCard from "../components/ProjectCard";
+import Card from "../components/Card";
 
 export default function Home() {
   return (
     <div className="home-container">
       <Helmet>
         <title>LyOPix Coding | Custom Web Solutions</title>
-        <meta name="description" content="Building tools, sites, and experiments for developers—use them, explore the code, and see what’s possible. Everything’s open to try, tweak, and learn from." />
+        <meta name="description" content="Building tools, sites, and experiments for developers—use them, explore the code, and see what's possible. Everything's open to try, tweak, and learn from." />
         <link rel="canonical" href="https://lyopix.com/" />
         <meta property="og:title" content="LyOPix Coding - Experiments For Developers To Use And Explore" />
-        <meta property="og:description" content="Building tools, sites, and experiments for developers—use them, explore the code, and see what’s possible. Everything’s open to try, tweak, and learn from." />
+        <meta property="og:description" content="Building tools, sites, and experiments for developers—use them, explore the code, and see what's possible. Everything's open to try, tweak, and learn from." />
         <meta property="og:url" content="https://lyopix.com/" />
         <meta property="og:type" content="website" />
         <meta name="robots" content="index, follow" />
@@ -73,21 +73,21 @@ export default function Home() {
           slides={[
             {
               content: (
-                <ProjectCard
+                <Card
                   title="Hiii"
+                  subtitle="Site"
                   content="How is everyone"
                   tags={["React.js", "Vue.js"]}
-                  type="Site"
                 />
               ),
             },
             {
               content: (
-                <ProjectCard
+                <Card
                   title="Hiii"
+                  subtitle="Tool"
                   content="How is everyone"
                   tags={["React.js", "Vue.js"]}
-                  type="Tool"
                 />
               ),
             },
@@ -100,111 +100,111 @@ export default function Home() {
           slides={[
             {
               content: (
-                <ProjectCard
+                <Card
                   title="Hiii"
+                  subtitle="Tool"
                   content="How is everyone"
                   tags={["React.js", "Vue.js"]}
-                  type="Tool"
                 />
               ),
             },
             {
               content: (
-                <ProjectCard
+                <Card
                   title="Hiii"
+                  subtitle="Tool"
                   content="How is everyone"
                   tags={["React.js", "Vue.js"]}
-                  type="Tool"
                 />
               ),
             },
             {
               content: (
-                <ProjectCard
+                <Card
                   title="Hiii"
+                  subtitle="Tool"
                   content="How is everyone"
                   tags={["React.js", "Vue.js"]}
-                  type="Tool"
                 />
               ),
             },
             {
               content: (
-                <ProjectCard
+                <Card
                   title="Hiii"
+                  subtitle="Tool"
                   content="How is everyone"
                   tags={["React.js", "Vue.js"]}
-                  type="Tool"
                 />
               ),
             },
             {
               content: (
-                <ProjectCard
+                <Card
                   title="Hiii"
+                  subtitle="Tool"
                   content="How is everyone"
                   tags={["React.js", "Vue.js"]}
-                  type="Tool"
                 />
               ),
             },
             {
               content: (
-                <ProjectCard
+                <Card
                   title="Hiii"
+                  subtitle="Tool"
                   content="How is everyone"
                   tags={["React.js", "Vue.js"]}
-                  type="Tool"
                 />
               ),
             },
             {
               content: (
-                <ProjectCard
+                <Card
                   title="Hiii"
+                  subtitle="Tool"
                   content="How is everyone"
                   tags={["React.js", "Vue.js"]}
-                  type="Tool"
                 />
               ),
             },
             {
               content: (
-                <ProjectCard
+                <Card
                   title="Hiii"
+                  subtitle="Tool"
                   content="How is everyone"
                   tags={["React.js", "Vue.js"]}
-                  type="Tool"
                 />
               ),
             },
             {
               content: (
-                <ProjectCard
+                <Card
                   title="Hiii"
+                  subtitle="Tool"
                   content="How is everyone"
                   tags={["React.js", "Vue.js"]}
-                  type="Tool"
                 />
               ),
             },
             {
               content: (
-                <ProjectCard
+                <Card
                   title="Hiii"
+                  subtitle="Tool"
                   content="How is everyone"
                   tags={["React.js", "Vue.js"]}
-                  type="Tool"
                 />
               ),
             },
             {
               content: (
-                <ProjectCard
+                <Card
                   title="Hiii"
+                  subtitle="Tool"
                   content="How is everyone"
                   tags={["React.js", "Vue.js"]}
-                  type="Tool"
                 />
               ),
             },

@@ -1,17 +1,16 @@
 /* Carousel.css */
 .carousel {
   position: relative;
-  width: 100%;
   max-width: 600px;
   border-radius: 12px;
   background-color: transparent;
+  overflow: visible;
 }
 
 .carousel-inner {
   position: relative;
   width: 100%;
   min-width: 100%;
-  aspect-ratio: 16 / 9;
   overflow: hidden;
   background-color: transparent;
 }
@@ -19,7 +18,7 @@
 .carousel-track {
   display: flex;
   transition: transform 0.3s ease;
-  height: 100%;
+  height: fit-content;
   width: fit-content;
   background-color: transparent;
 }
@@ -34,9 +33,6 @@
 }
 
 .carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   color: var(--text);
   border: none;
   width: 40px;
@@ -46,23 +42,36 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10;
   background: transparent;
+  border-radius: 50%;
+  transition: all 0.2s ease;
 }
 
-.carousel-btn.prev {
-  left: 16px;
+.carousel-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
 }
 
-.carousel-btn.next {
-  right: 16px;
+.carousel-btn:active {
+  transform: scale(0.95);
+}
+
+.carousel-controls {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  background: var(--bg);
+  backdrop-filter: blur(10px);
+  border: 1.5px solid var(--border);
+  border-radius: 999px;
+  /* padding: 2px; */
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .carousel-btn.autoplay {
-  bottom: 16px;
-  top: auto;
-  transform: none;
-  left: 50%;
-  margin-left: -20px;
   font-size: 14px;
 }

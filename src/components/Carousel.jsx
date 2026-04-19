@@ -65,7 +65,9 @@ export default function Carousel({ slides = [] }) {
             </div>
           ))}
         </div>
+      </div>
 
+      <div className="carousel-controls">
         <button
           className="carousel-btn prev"
           onClick={prev}
@@ -74,19 +76,18 @@ export default function Carousel({ slides = [] }) {
           ‹
         </button>
         <button
-          className="carousel-btn next"
-          onClick={next}
-          aria-label="Next slide"
-        >
-          ›
-        </button>
-
-        <button
           className="carousel-btn autoplay"
           onClick={() => setIsAutoplayOn(!isAutoplayOn)}
           aria-label={isAutoplayOn ? "Pause autoplay" : "Start autoplay"}
         >
           {isAutoplayOn ? "⏸" : "▶"}
+        </button>
+        <button
+          className="carousel-btn next"
+          onClick={next}
+          aria-label="Next slide"
+        >
+          ›
         </button>
       </div>
     </div>

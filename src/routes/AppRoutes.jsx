@@ -4,15 +4,16 @@ import Home from "../pages/Home";
 import Contact from "../pages/Contact";
 import Blog from "../pages/Blog";
 import BlogPage from "../pages/BlogPage";
-import Portfolio from "../pages/Portfolio";
 import NotFound from "../pages/NotFound";
 import TextPage from "../pages/TextPage";
+import LabPage from "../pages/Lab";
 
 export default function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<TextPage title="About Me" content="Irure enim exercitation reprehenderit aute sint minim amet ea aliqua exercitation. Adipisicing laboris culpa irure pariatur esse laborum pariatur. Ad proident deserunt voluptate veniam sunt exercitation reprehenderit minim. Cillum amet reprehenderit aute cillum. Mollit nisi ea eiusmod et do minim ipsum est eiusmod. Ex consequat fugiat Lorem velit et sit magna.
+      <Route path="/lab" element={<LabPage />} />
+      <Route path="/about" element={<TextPage title="About LyOPix" content="Irure enim exercitation reprehenderit aute sint minim amet ea aliqua exercitation. Adipisicing laboris culpa irure pariatur esse laborum pariatur. Ad proident deserunt voluptate veniam sunt exercitation reprehenderit minim. Cillum amet reprehenderit aute cillum. Mollit nisi ea eiusmod et do minim ipsum est eiusmod. Ex consequat fugiat Lorem velit et sit magna.
 
 Minim fugiat consequat quis elit. Culpa incididunt velit minim id. Excepteur commodo dolor reprehenderit ipsum et ea. Veniam ullamco irure dolore ex Lorem minim tempor consectetur cupidatat exercitation sit mollit tempor velit. Nulla sint occaecat nostrud do. Culpa elit in sunt exercitation proident nostrud aute exercitation ipsum nulla proident esse.
 
@@ -49,7 +50,6 @@ Ad sint aliqua consectetur dolor pariatur non laborum commodo qui aliquip et dol
           />
         }
       />
-      <Route path="/portfolio" element={<Portfolio />} />
       <Route path="*" element={<NotFound />} />
       <Route
         path="/legal/terms"

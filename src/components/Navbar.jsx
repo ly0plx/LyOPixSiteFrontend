@@ -83,7 +83,7 @@ export default function Navbar() {
           <li>
             <NavLink
               to="/contact"
-              className={({ isActive }) => `cta ${isActive ? "active" : ""}`}
+              className={({ isActive }) => `cta button ${isActive ? "active" : ""}`}
             >
               Contact Me
             </NavLink>
