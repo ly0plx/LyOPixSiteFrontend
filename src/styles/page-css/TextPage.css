@@ -1,23 +1,24 @@
 .text-page {
-  min-height: calc(100vh - 7rem);
+  min-height: 100vh;
   background-color: var(--bg-dark);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  padding-top: 7rem;
+  padding: calc(70px + 2rem) 1rem 3rem; /* clears fixed navbar */
+  box-sizing: border-box;
 }
 
 .text-page-container {
   max-width: 64rem;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
 }
 
 .text-page-card {
   background-color: var(--bg);
   border-radius: 10px;
   border: 1.5px solid var(--border);
-  padding: 2rem;
+  padding: clamp(1.25rem, 4vw, 2rem);
   position: relative;
   overflow: hidden;
   transition: var(--transition);
@@ -34,19 +35,21 @@
 }
 
 .text-page-title {
-  font-size: 3rem;
+  font-size: clamp(1.75rem, 5vw, 3rem);
   font-weight: 700;
   margin-bottom: 1.5rem;
   letter-spacing: -0.025em;
   color: var(--text);
   text-shadow: 0 0 30px var(--accent-glow);
+  line-height: 1.2;
 }
 
 .text-page-content {
-  font-size: 1.125rem;
+  font-size: clamp(0.9rem, 2vw, 1.125rem);
   line-height: 1.8;
   color: var(--text-muted);
   white-space: pre-wrap;
+  word-break: break-word;
 }
 
 .text-page-glow {
