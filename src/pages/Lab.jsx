@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
+import Card from "../components/Card.jsx";
 import "../styles/page-css/Lab.css";
 
 const events = [
@@ -181,14 +182,17 @@ export default function LabPage() {
           <h3>Notes</h3>
           <div className="notes-list">
             {tagNotes.map((tag, index) => (
-              <div className="note" key={index}>
-                <h4>{tag.name}</h4>
-                <ul>
-                  {tag.notes.map((note, i) => (
-                    <li key={i}>{note}</li>
-                  ))}
-                </ul>
-              </div>
+              <Card
+                key={index}
+                title={tag.name}
+                content={
+                  <ul>
+                    {tag.notes.map((note, noteIndex) => (
+                      <li key={noteIndex}>{note}</li>
+                    ))}
+                  </ul>
+                }
+              />
             ))}
           </div>
         </div>

@@ -19,9 +19,10 @@ h6 {
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
+  margin: 0;
 }
 
-p {
+p, a, span, label, li {
   font-family:
     "Inter",
     system-ui,
@@ -59,6 +60,9 @@ p {
   --info: oklch(0.72 0.12 255);
 }
 
+html, body {
+  background: var(--bg);
+}
 
 .button {
   display: flex;
